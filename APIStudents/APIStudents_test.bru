@@ -1,0 +1,20 @@
+meta {
+  name: APIStudents_test
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://127.0.0.1:8000/alumnos/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "nombre": "Juan",
+    "apellidos": "Pérez",
+    "carrera": "Ingeniería",
+    "facultad": "Facultad de Ingeniería"
+  }
+}
